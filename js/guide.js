@@ -1,7 +1,7 @@
 <?php
 	
 /*
-Template Name: FBTB Guide - Main
+Template Name: FBTB Set Guide - Main
 */
 	global $wpdb;
 	$query = "";
