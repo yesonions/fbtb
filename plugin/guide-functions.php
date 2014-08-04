@@ -10,18 +10,55 @@
 
 /* Place custom code below this line. */
 
-include_once('config.inc.php');
+//include_once('config.inc.php');
+defined('ABSPATH') or die("Bad fish!");
 
-function guide_get_set_by_number( $number ) {
+const DB_PREFIX = "test_";
+
+function guide_get_themes() {
+    global $wpdb;
     
+    $query = "select * from `".DB_PREFIX."guide_theme` WHERE parent is NULL";
+    $results = $wpdb->get_results($query);
+    return $results;
+    //return "What the hell, man";
+}
+   
+function guide_get_set_by_number( $number ) {
+
 }
 
 function guide_get_set_by_stub( $stub ) {
-    $query = "select * from `".DB_PREFIX."_guide` WHERE stub='".$stub;
+    $query = "select * from `".DB_PREFIX."guide` WHERE stub='".$stub;
 }
 
-function get_minifgs_for_set
+function guide_get_minifgs_for_set( $id ) {
 
+}
+
+function guide_get_affiliates_for_set( $id ) {
+
+}
+
+function guide_get_prices_for_set( $id ) {
+
+}
+
+function guide_get_reviews_for_set( $id ) {
+
+}
+
+function guide_get_subthemes_for_theme( $theme ) {
+    global $wpdb;
+    $query = "select * from `".DB_PREFIX."guide_theme` where parent ='".$theme."'";
+    $subthemes = $wpdb->get_results($query);
+    return $subthemes;
+    //return $query;
+}
+
+function guide_get_theme_years( $theme ) {
+    $years = $wpdb->get_results("select count(*) as totals, date_released as year from `".DB_PREFIX."_guide` where theme =".$theme." group by released order by released desc");
+}
 
 function sluggify( $url ) {
     # Prep string with some basic normalization
@@ -38,8 +75,6 @@ function sluggify( $url ) {
     $url = trim($url, '-');
     return $url;
 }
-
-
-
+	
 /* Place custom code above this line. */
 ?>
