@@ -61,18 +61,17 @@ if (is_page() ) { //Only Load if the Page is Valid
             </div>
             <div class="col-md-9">
                 <!-- Set up the Subthemes -->
-                <div class="row">
+                <ul class="nav nav-pills">                
                 <?php 
                     $subthemes = guide_get_subthemes_for_theme($theme->id);
-                    echo $subthemes;
+                    //echo $subthemes;
                     foreach($subthemes as $subtheme) {
                 ?>
-                    <div class="col-md-3">
-                        <h4><?php echo $subtheme->name ?></h4>
-                        <img src="<?php echo $subtheme->image; ?>" alt="<?php $subtheme->name; ?>" class="image-responsive" />
-                    </div>
+                    <a href="/guide/?theme=<?php echo $subtheme->stub ?>">
+                        <?php echo $subtheme->name ?>
+                    </a>
                 <?php } ?>
-                </div>
+                </ul>
             </div>
         </div>
     <?php 
