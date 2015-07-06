@@ -1,0 +1,151 @@
+//Define the header
+.nm-header {
+	 min-height: 100px;
+	width: 100%;
+	display: inline-block;
+
+	.nm-header-accent {
+		width: 20%;
+		background-color: $header-accent;
+	}
+
+	.nm-header-main {
+		width: 80%;
+		background-color: $header-background;
+	}
+	
+}
+
+.n-logo {
+	min-height:90px;
+	vertical-align: bottom;
+	width: 100%;
+  	fill: $black;
+  	background: url(img/nick.svg);
+}
+
+.m-logo {
+	min-height: 90px;
+	vertical-align: bottom;
+	width:100%;
+	fill: $white;
+	background: url(img/martin.svg);
+}
+
+
+.header-wrapper {
+	display: block;
+	width: 100%;
+	min-width: 100%;
+	height: 130px;
+	right: 0;
+	
+	overflow: hidden;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:999;
+
+	background-color: $black;
+	color: $white;
+	vertical-align: bottom;
+
+	.left-logo {
+		display: inline-block;
+		left:0;
+		width: 200px;
+		height: 100%;
+		background-color: $white;
+		color: $black;
+		text-algin: right;
+		position: relative;
+
+		> span {
+			font-size: 6em;
+			bottom: 0;
+			right: 0;
+			position: absolute;
+		}
+	}
+
+	.right-logo {
+		display: inline-block;
+		right:0;
+		width: 400px;
+		height: 100%;
+
+		> span {
+			font-size: 6em;
+			bottom: 0;
+			position: absolute;
+		}
+	}
+
+	&.smaller {
+		height: 75px;
+	}
+}
+
+
+
+
+/* =Header
+-------------------------------------------------------------- */
+header {
+	width:100%;
+	height:150px;
+	
+	-webkit-transition:height 0.3s;
+	-moz-transition:height 0.3s;
+	-ms-transition:height 0.3s;
+	-o-transition:height 0.3s;
+	transition:height 0.3s;
+	h1#logo {
+		display:inline-block;
+		height:150px;
+		line-height: 150px;
+		float:left;
+		font-family:$font-heading;
+		font-size: 60px;
+		color:$white;
+		font-weight: 400;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		-ms-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+	nav {
+		display:inline-block;
+		float:right;
+		a {
+			line-height: 150px;
+			margin-left:20px;
+			color:lighten($color, 20%);
+			font-weight:700;
+			font-size:18px;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			-ms-transition: all 0.3s;
+			-o-transition: all 0.3s;
+			transition: all 0.3s;
+			&:hover {
+				color:$white;
+			}
+		}
+	}
+	&.smaller {
+		height:75px;
+		h1#logo {
+			width:150px;
+			height:75px;
+			line-height:75px;
+			font-size:30px;
+		}
+		nav {
+			a {
+				line-height:75px;
+			}
+		}
+	}
+}

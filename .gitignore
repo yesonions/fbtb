@@ -1,0 +1,41 @@
+#Ignore Docs
+_site
+.ruby-version
+
+#Always-ignore stuff
+*.diff
+*.err
+*.log
+*.orig
+*.vi
+*.zip
+*.swo
+*.swp
+*.rej
+*~
+
+#OS, Editor, and related folders
+._*
+*.DS_Store
+.cache
+.tmproj
+.settings
+.project
+nbproject
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# grunt-html-validation
+validation-report.json
+validation-status.json
+
+#Folders to ignore
+bower_components
+node_modules
+dist
+vendor
+lib
+build
+bin
+.sass-cache

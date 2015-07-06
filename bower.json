@@ -1,0 +1,27 @@
+{
+    "name": "PerfectRPG-Web",
+    "version": "0.0.1",
+    "homepage": "https://github.com/dWhisper/mytoyshelf",
+    "authors": [
+    "Nick Martin <me@nickmartin.us>"
+  ],
+    "description": "A Website dedicated to collectors of action figures and all of their various time-sinking elements",
+    "main": "bower.json",
+    "license": "None",
+    "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+    "dependencies": {
+        "bootstrap-sass": "~3.3.4",
+        "moment": "~2.9.0",
+        "durandal": "~2.1.0",
+        "lodash": "~3.6.0",
+        "fontawesome": "~4.3.0",
+        "knockstrap": "~1.2.1",
+        "ko.plus": "*"
+    }
+}

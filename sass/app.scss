@@ -1,0 +1,31 @@
+//Colors and Global Variables
+@import "base/_variables";
+@import "base/_colors";
+
+//Basic styles
+@import "./_base";
+
+//MEDIA
+@import "responsive/_phone";
+
+//UTILS
+@import "utils/_ie";
+@import "utils/_reset";
+@import "utils/_clearfix";
+
+//BASE Classes
+@import "base/_main";
+
+@import "base/_print";
+
+//Components
+@import "components/_header";
+@import "components/_footer";
+@import "components/_sidebar";
+@import "components/_social";
+@import "components/_info";
+@import "components/_template";
+
+//Import Bootstrap
+@import '../lib/bootstrap-sass/assets/stylesheets/_bootstrap-sprockets';
+@import '../lib/bootstrap-sass/assets/stylesheets/_bootstrap';

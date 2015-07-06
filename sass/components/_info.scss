@@ -1,0 +1,29 @@
+/* =Info Bar
+-------------------------------------------------------------- */
+#info-bar {
+	background-color:$color;
+	a {
+		color:$white;
+		font-size:14px;
+		text-transform:uppercase;
+		display:inline-block;
+		margin:0;
+		padding:10px;
+		&:hover{
+			background-color:darken($color, 15%);
+		}
+	}
+	span.all-tutorials,
+	span.back-to-tutorial {
+		display:block;
+		width:50%;
+	}
+	span.all-tutorials {
+		float:left;
+		text-align:left;
+	}
+	span.back-to-tutorial {
+		float:right;
+		text-align:right;
+	}
+}
