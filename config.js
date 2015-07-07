@@ -19,6 +19,7 @@ System.config({
     "core-js": "npm:core-js@0.9.18",
     "css": "github:systemjs/plugin-css@0.1.13",
     "font-awesome": "npm:font-awesome@4.3.0",
+    "lodash": "npm:lodash@3.10.0",
     "traceur": "github:jmcriffey/bower-traceur@0.0.88",
     "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88",
     "github:aurelia/animator-css@0.3.2": {
@@ -139,6 +140,9 @@ System.config({
     },
     "npm:font-awesome@4.3.0": {
       "css": "github:systemjs/plugin-css@0.1.13"
+    },
+    "npm:lodash@3.10.0": {
+      "process": "github:jspm/nodelibs-process@0.1.1"
     }
   }
 });
