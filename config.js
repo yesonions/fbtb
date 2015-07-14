@@ -1,7 +1,14 @@
 System.config({
-  "transpiler": "traceur",
+  "transpiler": "babel",
+  "babelOptions": {
+    "optional": [
+      "es7.decorators",
+      "es7.classProperties",
+      "runtime"
+    ]
+  },
   "paths": {
-    "*": "*.js",
+    "*": "dist/*.js",
     "github:*": "jspm_packages/github/*.js",
     "npm:*": "jspm_packages/npm/*.js"
   }
@@ -15,13 +22,13 @@ System.config({
     "aurelia-framework": "github:aurelia/framework@0.12.0",
     "aurelia-http-client": "github:aurelia/http-client@0.9.1",
     "aurelia-router": "github:aurelia/router@0.9.0",
+    "babel": "npm:babel-core@5.4.7",
+    "babel-runtime": "npm:babel-runtime@5.4.7",
     "bootstrap": "github:twbs/bootstrap@3.3.5",
     "core-js": "npm:core-js@0.9.18",
     "css": "github:systemjs/plugin-css@0.1.13",
     "font-awesome": "npm:font-awesome@4.3.0",
     "lodash": "npm:lodash@3.10.0",
-    "traceur": "github:jmcriffey/bower-traceur@0.0.88",
-    "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88",
     "github:aurelia/animator-css@0.3.2": {
       "aurelia-templating": "github:aurelia/templating@0.12.1"
     },

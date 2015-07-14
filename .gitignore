@@ -40,3 +40,4 @@ build
 bin
 jspm_packages
 .sass-cache
+jspm_packages/*
