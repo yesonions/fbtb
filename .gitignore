@@ -36,7 +36,6 @@ node_modules
 dist
 vendor
 lib
-build
 bin
 jspm_packages
 .sass-cache
