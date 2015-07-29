@@ -200,11 +200,13 @@ nav {
 }
 /* line 5, ../sass/components/_header.scss */
 nav .header-banner {
+  max-width: 25%;
   max-height: 120px;
   width: auto;
   fill: #cc0000;
+  float: left;
 }
-/* line 10, ../sass/components/_header.scss */
+/* line 12, ../sass/components/_header.scss */
 nav .menu-button {
   position: absolute;
   top: 20px;
@@ -214,14 +216,20 @@ nav .menu-button {
   border-radius: 5px;
   color: #000;
 }
-/* line 20, ../sass/components/_header.scss */
+/* line 21, ../sass/components/_header.scss */
+nav .header-nav {
+  display: inline-block;
+  padding-top: 60pt;
+  position: relative;
+}
+/* line 25, ../sass/components/_header.scss */
 nav .header-nav li {
   font-size: 1.6em;
 }
 
 /* =Header
 -------------------------------------------------------------- */
-/* line 28, ../sass/components/_header.scss */
+/* line 33, ../sass/components/_header.scss */
 header {
   width: 100%;
   height: 150px;
@@ -231,7 +239,7 @@ header {
   -o-transition: height 0.3s;
   transition: height 0.3s;
 }
-/* line 36, ../sass/components/_header.scss */
+/* line 41, ../sass/components/_header.scss */
 header h1#logo {
   display: inline-block;
   height: 150px;
@@ -247,12 +255,12 @@ header h1#logo {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 51, ../sass/components/_header.scss */
+/* line 56, ../sass/components/_header.scss */
 header nav {
   display: inline-block;
   float: right;
 }
-/* line 54, ../sass/components/_header.scss */
+/* line 59, ../sass/components/_header.scss */
 header nav a {
   line-height: 150px;
   margin-left: 20px;
@@ -265,22 +273,22 @@ header nav a {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 65, ../sass/components/_header.scss */
+/* line 70, ../sass/components/_header.scss */
 header nav a:hover {
   color: #fff;
 }
-/* line 70, ../sass/components/_header.scss */
+/* line 75, ../sass/components/_header.scss */
 header.smaller {
   height: 75px;
 }
-/* line 72, ../sass/components/_header.scss */
+/* line 77, ../sass/components/_header.scss */
 header.smaller h1#logo {
   width: 150px;
   height: 75px;
   line-height: 75px;
   font-size: 30px;
 }
-/* line 79, ../sass/components/_header.scss */
+/* line 84, ../sass/components/_header.scss */
 header.smaller nav a {
   line-height: 75px;
 }

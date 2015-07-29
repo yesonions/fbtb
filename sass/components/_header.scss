@@ -3,9 +3,11 @@
 nav {
     display: inline;
     .header-banner {
+        max-width:25%;
         max-height: 120px;
         width: auto;
         fill: #cc0000;
+        float:left;
     }
     .menu-button {
         position: absolute;
@@ -17,6 +19,9 @@ nav {
         color: $black;
     }
     .header-nav {
+        display: inline-block;
+        padding-top: 60pt;
+        position:relative;
         li {
             font-size: 1.6em;
         }
