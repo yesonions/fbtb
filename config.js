@@ -30,6 +30,7 @@ System.config({
     "font-awesome": "npm:font-awesome@4.3.0",
     "lodash": "npm:lodash@3.10.0",
     "react": "npm:react@0.14.0-beta1",
+    "velocity": "github:julianshapiro/velocity@1.2.2",
     "github:aurelia/animator-css@0.3.2": {
       "aurelia-templating": "github:aurelia/templating@0.12.1"
     },
