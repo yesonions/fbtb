@@ -27,9 +27,9 @@ System.config({
     "bootstrap": "github:twbs/bootstrap@3.3.5",
     "core-js": "npm:core-js@0.9.18",
     "css": "github:systemjs/plugin-css@0.1.13",
-    "font-awesome": "npm:font-awesome@4.3.0",
-    "lodash": "npm:lodash@3.10.0",
-    "react": "npm:react@0.14.0-beta1",
+    "font-awesome": "npm:font-awesome@4.4.0",
+    "lodash": "npm:lodash@3.10.1",
+    "react": "npm:react@0.14.0-beta3",
     "velocity": "github:julianshapiro/velocity@1.2.2",
     "github:aurelia/animator-css@0.3.2": {
       "aurelia-templating": "github:aurelia/templating@0.12.1"
@@ -137,7 +137,10 @@ System.config({
       "core-js": "npm:core-js@0.9.18"
     },
     "github:jspm/nodelibs-buffer@0.1.0": {
-      "buffer": "npm:buffer@3.3.1"
+      "buffer": "npm:buffer@3.4.1"
+    },
+    "github:jspm/nodelibs-domain@0.1.0": {
+      "domain-browser": "npm:domain-browser@1.1.4"
     },
     "github:jspm/nodelibs-events@0.1.1": {
       "events": "npm:events@1.0.2"
@@ -163,7 +166,16 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
+    "npm:asap@2.0.3": {
+      "domain": "github:jspm/nodelibs-domain@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
     "npm:buffer@3.3.1": {
+      "base64-js": "npm:base64-js@0.0.8",
+      "ieee754": "npm:ieee754@1.1.6",
+      "is-array": "npm:is-array@1.0.1"
+    },
+    "npm:buffer@3.4.1": {
       "base64-js": "npm:base64-js@0.0.8",
       "ieee754": "npm:ieee754@1.1.6",
       "is-array": "npm:is-array@1.0.1"
@@ -173,8 +185,16 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
+    "npm:core-js@1.0.1": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "process": "github:jspm/nodelibs-process@0.1.1",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
     "npm:core-util-is@1.0.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
+    },
+    "npm:domain-browser@1.1.4": {
+      "events": "github:jspm/nodelibs-events@0.1.1"
     },
     "npm:envify@3.4.0": {
       "jstransform": "npm:jstransform@10.1.0",
@@ -185,7 +205,18 @@ System.config({
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
+    "npm:fbjs@0.1.0-alpha.4": {
+      "core-js": "npm:core-js@1.0.1",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.1",
+      "promise": "npm:promise@7.0.4",
+      "whatwg-fetch": "npm:whatwg-fetch@0.9.0"
+    },
     "npm:font-awesome@4.3.0": {
+      "css": "github:systemjs/plugin-css@0.1.13"
+    },
+    "npm:font-awesome@4.4.0": {
       "css": "github:systemjs/plugin-css@0.1.13"
     },
     "npm:inherits@2.0.1": {
@@ -202,12 +233,25 @@ System.config({
     "npm:lodash@3.10.0": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
+    "npm:lodash@3.10.1": {
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
     "npm:path-browserify@0.0.0": {
       "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:promise@7.0.4": {
+      "asap": "npm:asap@2.0.3",
+      "fs": "github:jspm/nodelibs-fs@0.1.2"
     },
     "npm:react@0.14.0-beta1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "envify": "npm:envify@3.4.0",
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:react@0.14.0-beta3": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "envify": "npm:envify@3.4.0",
+      "fbjs": "npm:fbjs@0.1.0-alpha.4",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:readable-stream@1.1.13": {

@@ -16,6 +16,7 @@ export class App {
             config.map([
                 { route: ['', 'articles'], name: 'news', moduleId: base + 'news/news', nav: true, title: 'Articles' },
                 { route: 'articles/type', name: 'reviews', moduleId: base + 'news/news', nav: true, title: 'Reviews' },
+                { route: 'articles/type', name: 'reviews', moduleId: base + 'news/news', nav: true, title: 'Hey Buddy' },
                 {
                     route: 'guide',
                     name: 'guide',
