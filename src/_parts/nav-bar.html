@@ -1,12 +1,9 @@
 <template>
-    <nav class="headerbox clearfix" role="navigation">
+    <nav class="header clearfix" role="navigation">
         <div class="header-logo">
-            <button type="button" class="menu-button responsive-menu pull-right" data-toggle="collapse" data-target="#menu-collapse">
-                Menu
-            </button>
             <img src="img/fbtb-banner.png" class="header-banner"><!-- Replace this with SVG for some effects... but for now, just a placeholder -->
         </div>
-        <ul class="header-nav nav navbar-nav">
+        <ul class="header-nav">
             <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
                 <a data-toggle="collapse" data-target="#bs-example-navbar-collapse-1.in" href.bind="row.href">${row.title}</a>
             </li>

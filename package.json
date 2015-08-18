@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dWhisper/fbtb",
   "dependencies": {
+    "bootstrap-grid": "^1.1.0",
     "ramjet": "^0.4.3"
   },
   "devDependencies": {
