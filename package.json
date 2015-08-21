@@ -63,6 +63,7 @@
       "font-awesome": "npm:font-awesome@^4.3.0",
       "lodash": "npm:lodash@^3.10.0",
       "react": "npm:react@^0.14.0-beta1",
+      "twbs/bootstrap": "github:twbs/bootstrap@4.0.0-alpha",
       "velocity": "github:julianshapiro/velocity@^1.2.2"
     },
     "devDependencies": {
@@ -75,6 +76,25 @@
     "overrides": {
       "npm:core-js@0.9.18": {
         "main": "client/shim.min"
+      },
+      "github:twbs/bootstrap@4.0.0-alpha": {
+        "main": "js/bootstrap",
+        "shim": {
+          "js/bootstrap": {
+            "deps": [
+              "jquery"
+            ],
+            "exports": "$"
+          }
+        },
+        "dependencies": {
+          "jquery": "github:components/jquery"
+        },
+        "files": [
+          "css",
+          "fonts",
+          "js"
+        ]
       }
     }
   }

@@ -14,9 +14,9 @@ export class App {
         this.router.configure(config => {
             config.title = 'FBTB';
             config.map([
-                { route: ['', 'articles'], name: 'news', moduleId: base + 'news/news', nav: true, title: 'News' },
-                { route: 'articles/:type', name: 'reviews', moduleId: base + 'news/news', nav: true, title: 'Reviews' },
-                { route: 'article/:type', name: 'news', moduleId: base + 'news/news', nav: true, title: 'Articles' },
+                { route: ['', 'news'], name: 'news', moduleId: base + 'news/news', nav: true, title: 'News' },
+                { route: 'reviews', name: 'reviews', moduleId: base + 'news/news', nav: true, title: 'Reviews' },
+                { route: 'article', name: 'news', moduleId: base + 'news/news', nav: true, title: 'Articles' },
                 { route: 'guide', name: 'guide', moduleId: base + 'guide/guide', nav: true, title: 'Guide' },
                 { route: 'community', name: 'community', moduleId: 'communit/communit', nav: true, title: 'Community' },
                 { route: 'child-router', name: 'child-router', moduleId: base + 'demo/demo', nav: false, title: 'Child Router' }
