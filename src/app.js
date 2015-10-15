@@ -1,26 +1,38 @@
-import {
-    Router
-}
-from 'aurelia-router';
-
-var base = './';
-
 export class App {
-    static inject() {
-        return [Router];
-    }
-    constructor(router) {
+    configureRouter(config, router) {
+        config.title = 'Aurelia';
+        config.map([
+            {
+                route: ['', 'home'],
+                name: 'home',
+                moduleId: 'welcome',
+                nav: true,
+                title: 'Welcome'
+            },
+
+            {
+                route: 'articles',
+                name: 'articles',
+                moduleId: 'articles',
+                nav: true,
+                title: 'Articles'
+            },
+            {
+                route: 'reviews',
+                name: 'reviews',
+                moduleId: 'reviews',
+                nav: true,
+                title: 'Reviews'
+            },
+            {
+                route: 'about',
+                name: 'about',
+                moduleId: 'about',
+                nav: false,
+                title: 'About'
+            }
+    ]);
+
         this.router = router;
-        this.router.configure(config => {
-            config.title = 'FBTB';
-            config.map([
-                { route: ['', 'news'], name: 'news', moduleId: base + 'news/news', nav: true, title: 'News' },
-                { route: 'reviews', name: 'reviews', moduleId: base + 'news/news', nav: true, title: 'Reviews' },
-                { route: 'article', name: 'news', moduleId: base + 'news/news', nav: true, title: 'Articles' },
-                { route: 'guide', name: 'guide', moduleId: base + 'guide/guide', nav: true, title: 'Guide' },
-                { route: 'community', name: 'community', moduleId: 'communit/communit', nav: true, title: 'Community' },
-                { route: 'child-router', name: 'child-router', moduleId: base + 'demo/demo', nav: false, title: 'Child Router' }
-          ]);
-        })
     }
 }

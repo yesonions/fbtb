@@ -1,0 +1,8 @@
+<template bindable="router">
+    <nav class="header-nav" role="navigation">
+        LOGO
+        <ul class="nav-menu">
+            <li repeat.for="row of router.navigation" class="${row.isActive ? 'active': ''}">${row.title}</li>
+        </ul>
+    </nav>
+</template>
